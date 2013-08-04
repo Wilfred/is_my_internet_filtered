@@ -39,13 +39,23 @@
         sexuality: [],
         socialNetworks: [],
         weaponsAndViolence: [],
-        tobacco: [],
+        tobacco: []
     }
 
     var results = {};
 
     function redrawResults() {
-        $('.dating-details').text(JSON.stringify(results));
+        $.each(results, function(category, logs) {
+            var summarySelector = "#" + category + "-summary",
+                detailsSelector = "#" + category + "-details",
+                successCount = logs.success.length,
+                failCount = logs.failed.length,
+                total = successCount + failCount,
+                summary = failCount ? failCount + "/" + total + " failed" : "OK";
+
+            $(summarySelector).text(category + ": " + summary);
+            $(detailsSelector).text(JSON.stringify(logs.failures));
+        });
     }
 
     function checkImage(category, site) {
