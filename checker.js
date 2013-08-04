@@ -2,7 +2,13 @@
     "use strict";
 
     var URLS = {
-        alcohol: [],
+        alcohol: [{
+            url: "http://www.carling.com/favicon.ico",
+            name: "Carling Lager"
+        }, {
+            url: "http://www.hardys.com.au/sites/hardys.com.au/files/hardys_favicon.ico",
+            name: "Hardys"
+        }],
         dating: [{
             url: "http://www.match.com/favicon.ico",
             name: "match.com"
@@ -40,9 +46,10 @@
         img.src = url;
     }
 
-
-    $.each(URLS.dating, function(i, site) {
-        checkImage(site.url);
+    $.each(URLS, function(category, sites) {
+        $.each(sites, function(i, site) {
+            checkImage(site.url);
+        });
     });
 
 })();
