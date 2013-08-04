@@ -44,21 +44,31 @@
 
     var results = {};
 
-    function checkImage(url) {
+    function redrawResults() {
+        $('.dating-details').text(JSON.stringify(results));
+    }
+
+    function checkImage(category, site) {
         var img = new Image();
         img.onload = function() {
-            console.log('all good for ' + url)
+            results[category] = results[category] || {failed: [], success: []};
+            results[category].success.push(site);
+
+            redrawResults();
         };
         img.onerror = function() {
-            console.log('failed for ' + url);
+            results[category] = results[category] || {failed: [], success: []};
+            results[category].failed.push(site);
+            
+            redrawResults();
         };
 
-        img.src = url;
+        img.src = site.url;
     }
 
     $.each(URLS, function(category, sites) {
         $.each(sites, function(i, site) {
-            checkImage(site.url);
+            checkImage(category, site);
         });
     });
 
