@@ -19,7 +19,16 @@
             url: "http://www.meetic.co.uk/favicon.ico",
             name: "meetic"
         }],
-        drugs: [],
+        drugs: [{
+            url: "http://legalizationofmarijuana.com/favicon.ico",
+            name: "Legalization Of Marijuana"
+        }, {
+            url: "http://justsaynow.firedoglake.com/favicon.ico",
+            name: "Just Say Now: Legalize marijuana"
+        }, {
+            url: "https://www.erowid.org/favicon.ico",
+            name: "Erowid"
+        }],
         fileSharing: [],
         gambling: [],
         gaming: [],
