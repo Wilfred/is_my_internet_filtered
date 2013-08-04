@@ -35,6 +35,7 @@
         hacking: [],
         politicallyControversial: [],
         pornography: [],
+        proxies: [],
         sexuality: [],
         socialNetworks: [],
         weaponsAndViolence: [],
