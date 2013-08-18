@@ -29,7 +29,19 @@
             url: "https://www.erowid.org/favicon.ico",
             name: "Erowid"
         }],
-        fileSharing: [],
+        fileSharing: [{
+            url: "https://www.4shared.com/favicon.ico",
+            name: "4shared"
+        }, {
+            url: "http://static.filestube.com/files/images/favicon.ico",
+            name: "FilesTube"
+        }, {
+            url: "https://torrentz.eu/favicon.ico",
+            name: "Torrentz"
+        }, {
+            url: "http://thepiratebay.sx/favicon.ico",
+            name: "The Pirate Bay"
+        }],
         gambling: [],
         gaming: [],
         hacking: [],
