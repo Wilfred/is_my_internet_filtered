@@ -42,7 +42,16 @@
             url: "http://thepiratebay.sx/favicon.ico",
             name: "The Pirate Bay"
         }],
-        gambling: [],
+        gambling: [{
+            url: "http://www.pch.com/favicon.ico",
+            name: "Publishers Clearing House"
+        }, {
+            url: "https://www.williamhill.com/favicon.ico",
+            name: "William Hill"
+        }, {
+            url: "https://www.calottery.com/favicon.ico",
+            name: "California Lottery"
+        }],
         gaming: [],
         hacking: [],
         politicallyControversial: [],
