@@ -101,7 +101,16 @@
             url: "https://www.webproxy.net/favicon.ico",
             name: "webproxy"
         }],
-        sexuality: [],
+        sexuality: [{
+            url: "https://egale.ca/favicon.ico",
+            name: "Egale"
+        }, {
+            url: "https://fetlife.com/favicon.ico",
+            name: "FetLife"
+        }, {
+            url: "http://www.samesame.com.au/favicon.ico",
+            name: "SameSame"
+        }],
         socialNetworks: [],
         weaponsAndViolence: [],
         tobacco: []
