@@ -130,8 +130,7 @@
         }, {
             url: "http://www.knifecenter.com/favicon.ico",
             name: "Knife Center"
-        }],
-        tobacco: []
+        }]
     }
 
     var results = {};
