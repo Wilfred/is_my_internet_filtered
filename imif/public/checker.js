@@ -154,6 +154,8 @@
     }
 
     function checkImage(category, site) {
+        // check for an image load. Record an error if we can't load it.
+        // TODO: timeouts, see http://stackoverflow.com/a/10399977/509706
         var img = new Image();
         img.onload = function() {
             results[category] = results[category] || {failed: [], success: []};
