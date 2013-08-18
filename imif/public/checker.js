@@ -29,6 +29,15 @@
             url: "https://www.erowid.org/favicon.ico",
             name: "Erowid"
         }],
+        // based on http://www.bombsecurity.com/extremists.html and
+        // http://hatemonitor.csusb.edu/extremist_websites.htm
+        extremist: [{
+            url: "http://www.godhatesfags.com/favicon.ico",
+            name: "Westboro Baptist Church"
+        }, {
+            url: "http://www.animalliberationfront.com/favicon.ico",
+            name: "Animal Liberation Front"
+        }],
         fileSharing: [{
             url: "https://www.4shared.com/favicon.ico",
             name: "4shared"
@@ -72,7 +81,6 @@
             url: "https://www.hackthis.co.uk/favicon.ico",
             name: "HackThis!"
         }],
-        politicallyControversial: [],
         pornography: [],
         proxies: [],
         sexuality: [],
