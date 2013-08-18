@@ -81,7 +81,16 @@
             url: "https://www.hackthis.co.uk/favicon.ico",
             name: "HackThis!"
         }],
-        pornography: [],
+        pornography: [{
+            url: "https://www.youporn.com/favicon.ico",
+            name: "YouPorn"
+        }, {
+            url: "http://www.literotica.com/favicon.ico",
+            name: "Literotica"
+        }, {
+            url: "http://new.livejasmin.com/favicon.ico",
+            name: "LiveJasmin"
+        }],
         proxies: [],
         sexuality: [],
         socialNetworks: [],
