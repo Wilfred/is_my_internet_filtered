@@ -111,7 +111,16 @@
             url: "http://www.samesame.com.au/favicon.ico",
             name: "SameSame"
         }],
-        socialNetworks: [],
+        socialNetworks: [{
+            url: "https://www.facebook.com/favicon.ico",
+            name: "Facebook"
+        }, {
+            url: "https://www.twitter.com/favicon.ico",
+            name: "Twitter"
+        }, {
+            url: "https://plus.google.com/favicon.ico",
+            name: "Google+"
+        }],
         weaponsAndViolence: [],
         tobacco: []
     }
