@@ -91,7 +91,16 @@
             url: "http://new.livejasmin.com/favicon.ico",
             name: "LiveJasmin"
         }],
-        proxies: [],
+        proxies: [{
+            url: "https://www.hidemyass.com/favicon.ico",
+            name: "Hide My Ass!"
+        }, {
+            url: "https://www.kproxy.com/favicon.ico",
+            name: "KPROXY"
+        }, {
+            url: "https://www.webproxy.net/favicon.ico",
+            name: "webproxy"
+        }],
         sexuality: [],
         socialNetworks: [],
         weaponsAndViolence: [],
