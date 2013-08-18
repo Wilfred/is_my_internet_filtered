@@ -121,7 +121,16 @@
             url: "https://plus.google.com/favicon.ico",
             name: "Google+"
         }],
-        weaponsAndViolence: [],
+        weapons: [{
+            url: "http://home.nra.org/favicon.ico",
+            name: "NRA"
+        }, {
+            url: "http://thefiringline.com/favicon.ico",
+            name: "The firing line"
+        }, {
+            url: "http://www.knifecenter.com/favicon.ico",
+            name: "Knife Center"
+        }],
         tobacco: []
     }
 
