@@ -52,8 +52,26 @@
             url: "https://www.calottery.com/favicon.ico",
             name: "California Lottery"
         }],
-        gaming: [],
-        hacking: [],
+        gaming: [{
+            url: "https://www.miniclip.com/favicon.ico",
+            name: "Miniclip"
+        }, {
+            url: "https://www.kongregate.com/favicon.ico",
+            name: "Kongregate"
+        }, {
+            url: "http://www.neopets.com/favicon.ico",
+            name: "Neopets"
+        }],
+        hacking: [{
+            url: "https://www.hackthissite.org/favicon.ico",
+            name: "Hack This Site!"
+        }, {
+            url: "https://www.defcon.org/favicon.ico",
+            name: "DEF CON Hacking Conference"
+        }, {
+            url: "https://www.hackthis.co.uk/favicon.ico",
+            name: "HackThis!"
+        }],
         politicallyControversial: [],
         pornography: [],
         proxies: [],
