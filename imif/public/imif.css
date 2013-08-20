@@ -1,4 +1,35 @@
 body {
-    width: 600px;
+    margin: 0 0 0 180px;
     margin-left: 200px;
+
+    height: 100%;
+    width: 100%;
+
+    background: #ddd;
+
+    padding: 0;
+}
+body > * {
+    width: 600px;
+    padding-left: 20px;
+}
+
+.faq {
+    background: purple;
+    width: 100%;
+}
+.faq > * {
+    width: 600px;
+}
+
+.title {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 180px;
+    
+    vertical-align: bottom;
+
+    background: gray;
 }

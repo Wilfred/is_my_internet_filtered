@@ -5,148 +5,151 @@ html(lang="en")
     title Is My Internet Filtered?
     link(rel="stylesheet", type="text/css", href="imif.css")
   body
-    h1 Is My Internet Filtered By My Internet Provider?
+    .title
+      h1 Is My Internet Filtered By My Internet Provider?
 
-    h3#alcohol-summary Alcohol
-    #alcohol-details
-    
-    h3#dating-summary Dating
-    #dating-details
-    
-    h3#drugs-summary Drugs
-    #drugs-details
-    
-    h3#extremist-summary Extremist
-    #extremist-details
-    
-    h3#fileSharing-summary File Sharing
-    #fileSharing-details
-    
-    h3#gambling-summary Gambling
-    #gambling-details
+    .results
+      h3#alcohol-summary Alcohol
+      #alcohol-details
 
-    h3#gaming-summary Gaming
-    #gaming-details
+      h3#dating-summary Dating
+      #dating-details
 
-    h3#hacking-summary Hacking
-    #hacking-details
+      h3#drugs-summary Drugs
+      #drugs-details
 
-    h3#pornography-summary Pornography
-    #pornography-details
+      h3#extremist-summary Extremist
+      #extremist-details
 
-    h3#proxies-summary Proxies
-    #proxies-details
-    
-    h3#sexuality-summary Sexuality
-    #sexuality-details
-    
-    h3#socialNetworks-summary Social Networks
-    #socialNetworks-details
-    
-    h3#weapons-summary Weapons
-    #weapons-details
-    
-    h2 FAQ
+      h3#fileSharing-summary File Sharing
+      #fileSharing-details
 
-    h3 How did you pick which sites to test with?
+      h3#gambling-summary Gambling
+      #gambling-details
 
-    p.
-      We tried to use the most popular sites in each category
-      according to
-      their <a href="http://www.alexa.com/topsites">Alexa
-      rating</a>. If there is a filter in place, it should at
-      least spot these sites.
+      h3#gaming-summary Gaming
+      #gaming-details
 
-    p.
-            We require sites that have
-            a <a href="http://en.wikipedia.org/wiki/Favicon">favicon</a>
-            since browsers allow us to fetch them from arbitrary
-            domains and check that we received a valid image. Filters
-            may return 404s, 403s, DNS errors, or return a HTML 'this
-            is blocked' page. By fetching a favicon we can detect all
-            these possibilities.
+      h3#hacking-summary Hacking
+      #hacking-details
 
-    p.
-            Where possible, we use HTTPS addresses. This allows us to
-            eliminate filters that forbid 'http://bad.example.com/'
-            but allow 'http://bad.example.com/favicon.ico', since it
-            is <a href="http://superuser.com/questions/144879/does-https-encrypt-urls-too">not
-            possible for routers to see the path over HTTPS
-            connections</a>.
+      h3#pornography-summary Pornography
+      #pornography-details
 
-    h3 Can users evade a filter?
+      h3#proxies-summary Proxies
+      #proxies-details
 
-    p.
-            Yes. There are many approaches, so we only cover the two
-            most common approaches here.
+      h3#sexuality-summary Sexuality
+      #sexuality-details
 
-    p.
-            There are many websites
-            (e.g. <a href="http://www.hidemyass.com/proxy/">[1]</a>
-            <a href="http://www.webproxy.ca/">[2]</a>) available that
-            enable you to circumvent filtering. Of course, some
-            filters also block web proxies. There is a cat-and-mouse
-            game between filter tools and online proxies, and the
-            filter tools frequently lose. Users only need to find one
-            accessible proxy, whereas a filter tool must block all of
-            them, with new proxies appearing often.
+      h3#socialNetworks-summary Social Networks
+      #socialNetworks-details
 
-    p.
-            You can also connect to the Internet through a VPN
-            provider (e.g. <a href="http://www.purevpn.com/">[1]</a>
-            <a href="http://www.strongvpn.com/">[2]</a>). Using a VPN,
-            your local ISP cannot see what websites you are accessing,
-            so cannot filter.
+      h3#weapons-summary Weapons
+      #weapons-details
 
-    h3 Does a filter catch everything?
+    .faq    
+      h2 FAQ
 
-    p.
-      No. New sites are created every day, and filters
-      are forever catching up. Some filters may add
-      websites to their blackists automatically, but
-      automatic tools are not perfect.
+      h3 How did you pick which sites to test with?
 
-    h3 What are the consequence of an internet service with a filter?
+      p.
+        We tried to use the most popular sites in each category
+        according to
+        their <a href="http://www.alexa.com/topsites">Alexa
+        rating</a>. If there is a filter in place, it should at
+        least spot these sites.
 
-    p.
-      A filter has to inspect every website accessed, which necessarily
-      makes surfing slower. Any bugs in the filter may stop sites
-      working, or even prevent access to acceptable sites.
+      p.
+              We require sites that have
+              a <a href="http://en.wikipedia.org/wiki/Favicon">favicon</a>
+              since browsers allow us to fetch them from arbitrary
+              domains and check that we received a valid image. Filters
+              may return 404s, 403s, DNS errors, or return a HTML 'this
+              is blocked' page. By fetching a favicon we can detect all
+              these possibilities.
 
-    h3 What does a good filter look like?
+      p.
+              Where possible, we use HTTPS addresses. This allows us to
+              eliminate filters that forbid 'http://bad.example.com/'
+              but allow 'http://bad.example.com/favicon.ico', since it
+              is <a href="http://superuser.com/questions/144879/does-https-encrypt-urls-too">not
+              possible for routers to see the path over HTTPS
+              connections</a>.
 
-    p.
-      A good filter should be clear that a site is being blocked,
-      rather than returning a generic error. It should be easy to
-      test whether or not the filter is working (for antivirus tools
-      there is the <a href="http://en.wikipedia.org/wiki/EICAR_test_file">EICAR
-      test file</a>.
+      h3 Can users evade a filter?
 
-    h3 How do I protect children online?
+      p.
+              Yes. There are many approaches, so we only cover the two
+              most common approaches here.
 
-    p.
-      A pure technology solution will never work perfectly. The best
-      approach is to supervise children as they surf, to ensure
-      they access content appropriate for their age.
+      p.
+              There are many websites
+              (e.g. <a href="http://www.hidemyass.com/proxy/">[1]</a>
+              <a href="http://www.webproxy.ca/">[2]</a>) available that
+              enable you to circumvent filtering. Of course, some
+              filters also block web proxies. There is a cat-and-mouse
+              game between filter tools and online proxies, and the
+              filter tools frequently lose. Users only need to find one
+              accessible proxy, whereas a filter tool must block all of
+              them, with new proxies appearing often.
 
-    h3 Where can I get more information on filtering?
+      p.
+              You can also connect to the Internet through a VPN
+              provider (e.g. <a href="http://www.purevpn.com/">[1]</a>
+              <a href="http://www.strongvpn.com/">[2]</a>). Using a VPN,
+              your local ISP cannot see what websites you are accessing,
+              so cannot filter.
 
-    p.
-      <a href="https://opennet.net/">The OpenNet Initiative</a>
-      tracks Internet filtering globally.
+      h3 Does a filter catch everything?
 
-    h3 I run a site with adult content. How do I prevent children accessing it?
+      p.
+        No. New sites are created every day, and filters
+        are forever catching up. Some filters may add
+        websites to their blackists automatically, but
+        automatic tools are not perfect.
 
-    p.
-        There was <a href="http://microformats.org/discuss/mail/microformats-discuss/2006-December/007909.html">a
-        proposal for a microformat</a>, but no standard has emerged. The most common solution
-        seems to be a clickthrough warning on the home page on adult sites.    
+      h3 What are the consequence of an internet service with a filter?
 
-    h3 Where do I report bugs on this site?
+      p.
+        A filter has to inspect every website accessed, which necessarily
+        makes surfing slower. Any bugs in the filter may stop sites
+        working, or even prevent access to acceptable sites.
 
-    p.
-        Please file bugs <a href="https://github.com/Wilfred/is_my_internet_filtered/issues">on
-        the GitHub project.
+      h3 What does a good filter look like?
+
+      p.
+        A good filter should be clear that a site is being blocked,
+        rather than returning a generic error. It should be easy to
+        test whether or not the filter is working (for antivirus tools
+        there is the <a href="http://en.wikipedia.org/wiki/EICAR_test_file">EICAR
+        test file</a>.
+
+      h3 How do I protect children online?
+
+      p.
+        A pure technology solution will never work perfectly. The best
+        approach is to supervise children as they surf, to ensure
+        they access content appropriate for their age.
+
+      h3 Where can I get more information on filtering?
+
+      p.
+        <a href="https://opennet.net/">The OpenNet Initiative</a>
+        tracks Internet filtering globally.
+
+      h3 I run a site with adult content. How do I prevent children accessing it?
+
+      p.
+          There was <a href="http://microformats.org/discuss/mail/microformats-discuss/2006-December/007909.html">a
+          proposal for a microformat</a>, but no standard has emerged. The most common solution
+          seems to be a clickthrough warning on the home page on adult sites.    
+
+      h3 Where do I report bugs on this site?
+
+      p.
+          Please file bugs <a href="https://github.com/Wilfred/is_my_internet_filtered/issues">on
+          the GitHub project.
 
     script(src="jquery.min.js")
     script(src="checker.js") 
