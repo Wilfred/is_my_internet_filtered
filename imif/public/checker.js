@@ -153,24 +153,53 @@
         });
     }
 
+    function tryFetchImage(url, successCallback, failureCallback) {
+        // Try to fetch image at URL, and call failureCallback if the
+        // image is invalid, we get a bad HTTP response, or it times out.
+        var img = new Image(),
+            completed = false;
+
+        img.onload = function() {
+            completed = true;
+            successCallback();
+        };
+        img.onerror = function() {
+            completed = true;
+            failureCallback();
+        };
+
+        // start the fetching
+        img.src = url;
+
+        // Cancel the image fetch if nothing's happened after 5
+        // seconds.  The browser would eventually call onerror, but
+        // the timeout (particularly DNS) can take over 30 seconds.
+        setTimeout(function() {
+            if (!completed) {
+                // stop the fetch
+                img.src = "";
+
+                failureCallback();
+            }
+        }, 5000);
+    }
+
     function checkImage(category, site) {
         // check for an image load. Record an error if we can't load it.
-        // TODO: timeouts, see http://stackoverflow.com/a/10399977/509706
-        var img = new Image();
-        img.onload = function() {
+        var success = function() {
             results[category] = results[category] || {failed: [], success: []};
             results[category].success.push(site);
 
             redrawResults();
         };
-        img.onerror = function() {
+        var failed = function() {
             results[category] = results[category] || {failed: [], success: []};
             results[category].failed.push(site);
             
             redrawResults();
         };
 
-        img.src = site.url;
+        tryFetchImage(site.url, success, failed);
     }
 
     $.each(URLS, function(category, sites) {
