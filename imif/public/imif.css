@@ -2,7 +2,7 @@ body {
     margin: 0 0 0 180px;
     margin-left: 200px;
 
-    background: #ddd;
+    background: #F5F2ED;
 }
 body > * {
     width: 600px;
@@ -10,7 +10,7 @@ body > * {
 }
 
 .faq {
-    background: #bbb;
+    background: #C8B193;
     width: 100%;
 }
 .faq > * {
@@ -26,7 +26,21 @@ body > * {
     
     vertical-align: bottom;
 
-    background: gray;
+    background: #283D38;
+}
+
+h1 {
+    font-size: 38px;
+    font-family: Helvetica;
+    color: #F5F2ED;
+    
+    position: absolute;
+    top: 25px;
+    left: 37px;
+    height: 300px;
+    width: 500px;
+
+    -moz-transform: rotate(-90deg);
 }
 
 p {
@@ -34,7 +48,7 @@ p {
 }
 
 a {
-    color: blue;
+    color: #283D38;
     text-decoration: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid black;
 }

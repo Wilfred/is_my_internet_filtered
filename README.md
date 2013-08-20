@@ -21,3 +21,12 @@ GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
 along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+### Other copyrights
+
+JavaScript libraries included have their own licensing, see the first
+lines of those files.
+
+The colour scheme used is
+[this by yantaruksa](http://www.colourlovers.com/palette/3001877/Byakuya_Twogami)
+under a CC-BY-NC-SA license.
