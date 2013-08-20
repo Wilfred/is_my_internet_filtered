@@ -3,7 +3,7 @@ A JavaScript single page site for testing Internet filtering.
 This site is developed with [harpjs](http://harpjs.com/), you can
 develop it with:
 
-    $ sudo npm install harpjs -g
+    $ sudo npm install harp -g
     $ harp server imif
 
 ## License
