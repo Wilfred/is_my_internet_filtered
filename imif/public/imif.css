@@ -1,3 +1,6 @@
+* {
+    font-family: Georgia;
+}
 body {
     margin: 0 0 0 180px;
     margin-left: 200px;
@@ -9,8 +12,13 @@ body > * {
     padding-left: 20px;
 }
 
+.results span {
+    font-style: italic;
+}
+
 .faq {
     background: #C8B193;
+    padding-top: 5px;
     width: 100%;
 }
 .faq > * {

@@ -135,10 +135,6 @@
 
     var results = {};
 
-    function capitalize(string) {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-
     function redrawResults() {
         $.each(results, function(category, logs) {
             var summarySelector = "#" + category + "-summary",
@@ -148,7 +144,7 @@
                 total = successCount + failCount,
                 summary = failCount ? failCount + "/" + total + " failed" : "Not filtered";
 
-            $(summarySelector).text(capitalize(category) + ": " + summary);
+            $(summarySelector).text(summary);
             $(detailsSelector).text(JSON.stringify(logs.failures));
         });
     }
