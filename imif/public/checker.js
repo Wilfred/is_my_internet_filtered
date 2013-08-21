@@ -198,6 +198,7 @@
         tryFetchImage(site.url, success, failed);
     }
 
+    var spinner = null;
     function startSpinner() {
         var opts = {
             lines: 13, // The number of lines to draw
@@ -218,7 +219,11 @@
             left: 'auto' // Left position relative to parent in px
         };
         var target = document.getElementById('spinner');
-        var spinner = new Spinner(opts).spin(target);
+        spinner = new Spinner(opts).spin(target);
+    }
+
+    function stopSpinner() {
+        spinner.stop();
     }
 
     $.each(URLS, function(category, sites) {
