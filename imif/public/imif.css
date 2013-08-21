@@ -43,10 +43,11 @@ h1 {
     color: #F5F2ED;
     
     position: absolute;
-    top: 25px;
+    top: 87px;
     left: 37px;
     height: 300px;
     width: 500px;
+    letter-spacing: 3px;
 
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg);
