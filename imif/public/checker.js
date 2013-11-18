@@ -55,8 +55,8 @@
             url: "http://www.pch.com/favicon.ico",
             name: "Publishers Clearing House"
         }, {
-            url: "https://www.williamhill.com/favicon.ico",
-            name: "William Hill"
+            url: "https://www.ladbrokes.com/favicon.ico",
+            name: "Ladbrokes"
         }, {
             url: "https://www.calottery.com/favicon.ico",
             name: "California Lottery"
