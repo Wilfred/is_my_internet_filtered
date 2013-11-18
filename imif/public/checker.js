@@ -37,6 +37,9 @@
         }, {
             url: "http://www.animalliberationfront.com/favicon.ico",
             name: "Animal Liberation Front"
+        }, {
+            url: "http://www.stormfront.org/favicon.ico",
+            name: "Stormfront"
         }],
         fileSharing: [{
             url: "https://www.4shared.com/favicon.ico",
