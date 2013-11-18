@@ -6,7 +6,7 @@
             url: "http://www.carling.com/favicon.ico",
             name: "Carling Lager"
         }, {
-            url: "http://www.hardys.com.au/sites/hardys.com.au/files/hardys_favicon.ico",
+            url: "http://www.hardys.com./sites/hardys.com.au/files/hardys_favicon.ico",
             name: "Hardys"
         }],
         dating: [{
