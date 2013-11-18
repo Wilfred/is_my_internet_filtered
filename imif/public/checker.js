@@ -142,13 +142,18 @@
         $.each(results, function(category, logs) {
             var summarySelector = "#" + category + "-summary",
                 detailsSelector = "#" + category + "-details",
+                $detailsTemplate = $('#details-template').html(),
                 successCount = logs.success.length,
                 failCount = logs.failed.length,
                 total = successCount + failCount,
                 summary = failCount ? failCount + "/" + total + " failed" : "Not filtered";
 
             $(summarySelector).text(summary);
-            $(detailsSelector).text(JSON.stringify(logs.failures));
+
+            if (failCount > 0) {
+                // $(detailsSelector).text(JSON.stringify(logs.failed));
+                $(detailsSelector).html(_.template($detailsTemplate, {failed: logs.failed}));
+            }
         });
     }
 

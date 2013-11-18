@@ -153,6 +153,12 @@ html(lang="en")
           Please file bugs <a href="https://github.com/Wilfred/is_my_internet_filtered/issues">on
           the GitHub project.
 
+    script(src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js")
     script(src="jquery.min.js")
     script(src="spin.min.js")
-    script(src="checker.js") 
+    script(src="checker.js")
+
+    script#details-template(type="text/template")
+        p.
+            Could not reach:
+            <% _.each(failed, function(site) { %> <%= site.name %> <% }); %>
