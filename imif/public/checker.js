@@ -6,7 +6,7 @@
             url: "http://www.carling.com/favicon.ico",
             name: "Carling Lager"
         }, {
-            url: "http://www.hardys.com./sites/hardys.com.au/files/hardys_favicon.ico",
+            url: "http://hardyswines.com/uk/wp-content/themes/hardys2013/icons/Hardys.ico",
             name: "Hardys"
         }],
         dating: [{
