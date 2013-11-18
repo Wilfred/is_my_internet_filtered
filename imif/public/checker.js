@@ -145,9 +145,15 @@
                 $detailsTemplate = $('#details-template').html(),
                 successCount = logs.success.length,
                 failCount = logs.failed.length,
-                total = successCount + failCount,
-                summary = failCount ? failCount + "/" + total + " failed" : "Not filtered";
+                summary;
 
+            if (failCount > 0) {
+                summary = failCount + " failed";
+            } else if (successCount === URLS[category].length) {
+                summary = "Not filtered";
+            } else {
+                summary = "Checking";
+            }
             $(summarySelector).text(summary);
 
             if (failCount > 0) {
