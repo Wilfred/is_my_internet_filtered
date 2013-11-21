@@ -181,7 +181,7 @@
         // start the fetching
         img.src = url;
 
-        // Cancel the image fetch if nothing's happened after 5
+        // Cancel the image fetch if nothing's happened after 10
         // seconds.  The browser would eventually call onerror, but
         // the timeout (particularly DNS) can take over 30 seconds.
         setTimeout(function() {
@@ -191,7 +191,7 @@
 
                 failureCallback();
             }
-        }, 5000);
+        }, 10000);
     }
 
     function checkImage(category, site) {
