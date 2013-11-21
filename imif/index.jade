@@ -51,14 +51,24 @@ html(lang="en")
     .faq    
       h2 FAQ
 
+      h3 Are the results accurate?
+
+      p.
+        We test for filters by attempting to download the favicon from
+        a variety of sites. If any of those sites are down, then
+        no-one can access that site, even on an unfiltered Internet
+        connection. A good tool for seeing if a site is up is
+        <a href="http://isup.me/">Down For Everyone Or Just Me</a>.
+          
+
       h3 How did you pick which sites to test with?
 
       p.
         We tried to use the most popular sites in each category
-        according to
-        their <a href="http://www.alexa.com/topsites">Alexa
-        rating</a>. If there is a filter in place, it should at
-        least spot these sites.
+        according to their <a
+        href="http://www.alexa.com/topsites">Alexa rating</a>. If
+        there is a filter in place, it should at least spot these
+        sites.
 
       p.
               We require sites that have
@@ -88,8 +98,8 @@ html(lang="en")
               (e.g. <a href="http://www.hidemyass.com/proxy/">[1]</a>
               <a href="http://www.webproxy.ca/">[2]</a>) available that
               enable you to circumvent filtering. Of course, some
-              filters also block web proxies. There is a cat-and-mouse
-              game between filter tools and online proxies, and the
+              filters also block these sites. There is a cat-and-mouse
+              game between filter tools and anti-filter tools, and the
               filter tools frequently lose. Users only need to find one
               accessible proxy, whereas a filter tool must block all of
               them, with new proxies appearing often.
@@ -104,10 +114,11 @@ html(lang="en")
       h3 Does a filter catch everything?
 
       p.
-        No. New sites are created every day, and filters
-        are forever catching up. Some filters may add
-        websites to their blacklists automatically, but
-        automatic tools are not perfect.
+
+        No. New sites are created every day, and filters are forever
+        catching up. Filters either include lists written by people
+        (which become out-of-date) or are generated automatically,
+        which is error-prone.
 
       h3 What are the consequence of an internet service with a filter?
 
@@ -132,11 +143,13 @@ html(lang="en")
         approach is to supervise children as they surf, to ensure
         they access content appropriate for their age.
 
-      h3 Where can I get more information on filtering?
+      h3 Where can I get more information who filters what?
 
       p.
         <a href="https://opennet.net/">The OpenNet Initiative</a>
-        tracks Internet filtering globally.
+        tracks Internet filtering globally. There is also
+        <a href="http://www.greatfirewallofchina.org/">a site</a>
+        that allows you to test Chinese filtering.
 
       h3 I run a site with adult content. How do I prevent children accessing it?
 
