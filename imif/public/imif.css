@@ -1,11 +1,9 @@
 * {
-    font-family: Georgia;
+    font-family: 'Ubuntu', sans-serif;
 }
 body {
     margin: 0 0 0 180px;
     margin-left: 200px;
-
-    background: #F5F2ED;
 }
 body > * {
     width: 600px;
@@ -33,36 +31,10 @@ body > * {
     width: 600px;
 }
 
-.title {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 180px;
-    
-    vertical-align: bottom;
-
-    background: #283D38;
-}
-
 h1 {
     font-size: 38px;
-    font-family: Helvetica;
-    color: #F5F2ED;
-    
-    position: absolute;
-    top: 87px;
-    left: 37px;
-    height: 300px;
-    width: 500px;
-    letter-spacing: 3px;
-
-    transform: rotate(-90deg);
-    -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -ms-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    color: #283D38;
+    margin: 20px 0 0 0;
 }
 
 p {
