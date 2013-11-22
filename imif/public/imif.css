@@ -12,8 +12,16 @@ body > * {
     padding-left: 20px;
 }
 
-.results span {
+.results-column {
+    width: 300px;
+    float: left;
+}
+.results-column span {
     font-style: italic;
+}
+
+.clearfix {
+    clear: both;
 }
 
 .faq {
