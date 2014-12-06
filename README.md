@@ -30,3 +30,8 @@ lines of those files.
 The colour scheme used is
 [this by yantaruksa](http://www.colourlovers.com/palette/3001877/Byakuya_Twogami)
 under a CC-BY-NC-SA license.
+
+## See also
+
+https://www.blocked.org.uk/
+http://www.departmentofdirty.co.uk/
